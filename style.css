@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.load{
+    height: 100vh;
+    width: 100vh;
+    background:white;
+    display: grid;
+    place-items: center;
+}
+
+header{
+    width: 100vw;
+    height: 100vh;;
+    display: flex;
+    flex-wrap: wrap;
+}
+.left{
+    flex-basis: 45%;
+    margin:1.2rem 2%;
+    padding: 1rem;
+}
+.left img{
+    margin: 1rem 2.5rem;
+}
+.left h1{
+    color: #2c7;
+    margin: 1rem 0rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.left h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 1.2rem 0rem;
+}
+.left p{
+    font-size: 1.2rem;
+    margin: 1.2rem 0rem;
+}
+button{
+    padding: 0.7rem 1.1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background:black;
+    text-align: center;
+    transition: 0.4s;
+    word-spacing: 0.2rem;
+    color: white;
+    outline: none;
+    margin: 1rem 0rem;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    background:#2c7;
+}
+.right{
+    background:#2c7;
+    flex-basis: 50%;
+    border-radius:10% 0% 0% 100% ;
+}
+.right img{
+    width: 90%;
+    height: 70%;
+    margin: 1rem 0rem;
+    transform: rotateY(30deg)
+}
+.right h1{
+    font-size: 1.3rem;
+    margin: 2rem 6rem;
+    text-transform: capitalize;
+    color: white;
+}
+.right span{
+    color: black;
+}
+@media screen and (max-width:768px) {
+    .left, .right{
+        flex-basis: 100%;
+    }
+    .right{
+        background:none;
+    }
+    .right h1{
+        display: none;
+    }
+    header{
+        background:rgb(220, 248, 220);
+        height: auto;
+    }
+}
+
+#service{
+    padding: 2rem;
+    margin: 2rem;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service-items{
+   flex-basis: 28%;
+   margin: 1rem 2%;
+   flex: 1;
+   text-align: center;
+  
+}
+@media screen and (max-width:768px) {
+    .service-items{
+        flex-basis: 100%;
+    }
+}
+.service-items img{
+    border: 4px solid #2c7;
+    border-radius: 50%;
+    padding: 2rem;
+    transition: 1s;
+}
+.service-items img:hover{
+    background:black;
+}
+.service-items h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 1rem 0rem;
+    padding: 0.5rem;
+    font-weight: 300;
+}
+.service-items p{
+    word-spacing: 2px;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    opacity: 0.6;
+}
+
+/* about section starts here  */
+
+#about-us{
+    padding: 2rem;
+    background:rgb(220, 248, 220);
+}
+
+#about-us h2{
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding:0.5rem;
+    margin:2rem 0rem;
+    color: #2c7;
+}
+
+
+.about-left, .about-right{
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+.img-section, .text-section{
+    flex: 1;
+    flex-basis: 45%;
+    padding: 0.5rem;
+}
+.img-section img{
+    width: 80%;
+    height: auto;
+}
+.text-section{
+    margin: 1rem 0.5rem;
+}
+@media screen and (max-width:768px) {
+    .img-section, .text-section{
+        flex-basis: 95%;
+    }
+}
+
+.text-section h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    padding: 0.5rem;
+    margin: 1rem 0rem;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.text-section p{
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+    text-align: justify;
+    padding: 0.5rem;
+    margin: 0.5rem 0rem;
+}
+.text-section button{
+    color: white;
+    border: 2px solid #2c7;
+    background:transparent;
+    color: #2c7;
+    transition: 0.3s;
+}
+.text-section button:hover{
+    background:#2c7;
+    color: white;
+}
+
+
+/* question section starts here  */
+#question{
+    padding: 2rem;
+}
+#question h2{
+    font-size: 1.5rem;
+    color: #2c7;
+    text-transform: uppercase;
+    text-align:center;
+}
+.question-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem 0rem;
+}
+.question-img-section{
+    flex-basis: 40%;
+    flex: 1;
+}
+.question-img-section img{
+    width: 80%;
+    height: 20rem;
+}
+.question-text-section{
+    flex-basis:55%;
+    flex: 1;
+}
+@media screen and (max-width:768px) {
+    .question-img-section, .question-text-section{
+        flex-basis: 100%;
+    }
+   
+}
+
+
+
+.qstn-div{
+    padding: 0.5rem;
+    border: 2px solid #2c7;
+    margin: 0.8rem 0rem;
+    position: relative;
+}
+.qstn-div p:last-child{
+    margin-top: 1rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+.qstn-div p:first-child{
+    cursor: pointer;
+}
+.ans{
+    display: none;
+}
+
+span{
+    color: #2c7;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0.1rem;
+    right: 0.4rem;
+    cursor: pointer;
+    padding: 0.3rem;
+}
+.minus{
+    display: none;
+}
+#contact-us{
+    padding: 2rem;
+    background-image: url(asset/contact_bg.jpg);
+    object-fit: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-us-text, .contact-us-msg{
+    flex: 1;
+    flex-basis: 45%;
+    margin: 1rem 0.5rem;
+}
+@media screen and (max-width:768px) {
+    .contact-us-text, .contact-us-msg{
+        flex-basis: 100%;
+    }
+}
+.contact-us-text h4, .contact-us-text h5{
+    color: white;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 2rem 0rem;
+}
+.contact-us-text h4{
+    color: #2c7;
+}
+.contact-us-text button{
+    background:white;
+    color: #2c7;
+    padding: 0.7rem 2rem;
+    text-transform: capitalize;
+    margin-top: 10rem;
+}
+.contact-us-text button:hover{
+    color: white;
+    background:#2c7;
+}
+.contact-us-msg{
+    background: white;
+    padding: 4rem 2rem;
+}
+.contact-us-msg input{
+    background:none;
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin: 0.5rem 0rem;
+    font-size: 0.8rem;
+    color: grey;
+}
+input::placeholder{
+    text-transform: capitalize;
+}
+textarea {
+    width: 100%;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    outline:none;
+}
+.contact-us-msg button{
+    text-transform: capitalize;
+    padding: 0.7rem 4rem;
+    margin: 1rem auto;
+    display: block;
+}
+
+/* carousel section starts here  */
+.testimonial{
+    padding: 2rem;
+    background:white;
+}
+.testimonial h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1..3rem;
+    margin: 1rem 0rem;
+    color: #2c7;
+    padding: 0.3rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.item{
+    background:black;
+    color: white;
+    margin: 1rem 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.circle{
+    width: 5rem;
+    height: 5rem;
+    background:#2c7;
+    border-radius: 50%;
+    margin: 1rem auto;
+}
+.item h2{
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 2px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    margin: 1rem 0rem;
+    color: greenyellow;
+}
+.item p{
+    opacity: 0.8;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+footer{
+    padding: 2rem;
+    background:black;
+}
+footer h3{
+    text-align: center;
+    color: #2c7;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
